@@ -14,7 +14,7 @@ categories: Git,
 ![image]({{site.url}}/img/putty-key-generator-key generated.png)  
 
 新增 SSH 金鑰。
-![image]({{BASE_PATH}}/img/Github.png)  
+![image]({{site.url}}/img/Github.png)  
 
 ![image]({{site.url}}/img/Github-2.png)  
 
