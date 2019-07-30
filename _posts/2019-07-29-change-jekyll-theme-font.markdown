@@ -16,10 +16,8 @@ https://github.com/jekyll/minima/blob/master/README.md
 
 > Create a new instance at site source.  
 >
->> Create a new file at <your-site>/assets/css/style.scss  
-  
+>> Create a new file at <your-site>/assets/css/style.scss    
 >> Add the frontmatter dashes, and  
-
 >> Add @import "minima";  
 
 > Add your custom CSS.  
