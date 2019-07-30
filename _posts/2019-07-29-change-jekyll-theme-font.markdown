@@ -19,13 +19,11 @@ https://github.com/jekyll/minima/blob/master/README.md
 >> * Create a new file at <your-site>/assets/css/style.scss    
 >> * Add the frontmatter dashes, and  
 >> * Add @import "minima";
->> * Add your custom CSS.  
-  
+>> * Add your custom CSS.    
 > Download the file from this repo  
 >
 >>  * Create a new file at <your-site>/assets/css/style.scss
->>  * Copy the contents at assets/css/style.scss onto the css/style.scss you just created, and edit away!  
-  
+>>  * Copy the contents at assets/css/style.scss onto the css/style.scss you just created, and edit away!    
 > Copy directly from minima gem  
 >>  * Go to your local minima gem installation directory ( run bundle show minima to get the path to it ).  
 >>  * Copy the assets/ folder from there into the root of <your-site>    
