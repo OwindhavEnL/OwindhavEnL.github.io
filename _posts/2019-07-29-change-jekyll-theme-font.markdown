@@ -24,7 +24,7 @@ https://github.com/jekyll/minima/blob/master/README.md
   
 > Download the file from this repo  
 
->> Create a new file at <your-site>/assets/css/style.scss  
+>> Create a new file at <your-site>/assets/css/style.scss  </br>
   
 >> Copy the contents at assets/css/style.scss onto the css/style.scss you just created, and edit away!  
   
