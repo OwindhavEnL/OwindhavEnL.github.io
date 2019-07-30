@@ -36,8 +36,10 @@ https://hermens.com.au/2016/10/14/Getting-started-with-Jekyll-Part-5/
 >>  * Copy the assets/ folder from there into the root of <your-site>    
 >>  * Change whatever values you want, inside <your-site>/assets/css/style.scss  
 
-加入 _includes/head.html
-加入 assests/css/style.scss
+加入 _includes/head.html  
+
+加入 assests/css/style.scss  
+
 
 參考來源
 https://github.com/jekyll/minima/blob/master/README.md
