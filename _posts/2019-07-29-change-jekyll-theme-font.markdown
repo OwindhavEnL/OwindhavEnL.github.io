@@ -28,7 +28,8 @@ https://hermens.com.au/2016/10/14/Getting-started-with-Jekyll-Part-5/
 > Download the file from this repo  
 >
 >>  * Create a new file at <your-site>/assets/css/style.scss
->>  * Copy the contents at assets/css/style.scss onto the css/style.scss you just created, and edit away!    
+>>  * Copy the contents at assets/css/style.scss onto the css/style.scss you just created, and edit away!  
+> 
 > Copy directly from minima gem  
 >
 >>  * Go to your local minima gem installation directory ( run bundle show minima to get the path to it ).  
