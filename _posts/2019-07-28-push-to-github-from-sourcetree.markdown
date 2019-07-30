@@ -11,12 +11,12 @@ categories: Git,
 
 點選 [Save private key] 儲存私鑰。  
 
-![image]({{site.url}}img/putty-key-generator-key generated.PNG)  
+![image]({{site.baseurl}}/assets/img/putty-key-generator-key generated.PNG)  
 
 新增 SSH 金鑰。
-![image]({{site.url}}assets/img/Github.PNG)  
+![image]({{site.baseurl}}/assets/img/Github.PNG)  
 
-![image]({{site.url}}/assetsimg/Github-2.PNG)  
+![image]({{site.baseurl}}/assets/img/Github-2.PNG)  
 
 Remote 設定要用 git@ ...
-![image]({{site.url}}assets/img/repo-settings.PNG)
+![image]({{site.baseurl}}/assets/img/repo-settings.PNG)
