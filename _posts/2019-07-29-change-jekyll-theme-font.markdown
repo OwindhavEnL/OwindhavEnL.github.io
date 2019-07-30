@@ -14,10 +14,11 @@ https://hermens.com.au/2016/10/14/Getting-started-with-Jekyll-Part-5/
 如何修改 Jekyll 字型
 https://github.com/jekyll/minima/blob/master/README.md
 
-> Create a new instance at site source.
-> Create a new file at <your-site>/assets/css/style.scss
-> Add the frontmatter dashes, and
-> Add @import "minima";
+> Create a new instance at site source.  
+>
+>> Create a new file at <your-site>/assets/css/style.scss
+>> Add the frontmatter dashes, and
+>> Add @import "minima";
 > Add your custom CSS.
 > Download the file from this repo
 > Create a new file at <your-site>/assets/css/style.scss
