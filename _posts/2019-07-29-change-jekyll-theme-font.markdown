@@ -12,10 +12,7 @@ tags: Jekyll
 https://hermens.com.au/2016/10/14/Getting-started-with-Jekyll-Part-5/  
 
 ## GitHub 圖片無法顯示的問題
-在 localhost 上圖片是可以顯示，但放到 GitHub 上圖片都無法顯示，
-試了三天之後，發現是圖片的副檔名為 PNG，
-但在文章裡設定為 png，不知為何 local 端讀的到圖，
-將文章的圖片改為 PNG 後就解決這個問題了。
+在 localhost 上圖片是可以顯示，但放到 GitHub 上圖片都無法顯示，試了三天之後，發現是圖片的副檔名為 PNG，但在文章裡設定為 png，不知為何 local 端讀的到圖，將文章的圖片改為 PNG 後就解決這個問題了。
 
 
 ## 如何修改 Jekyll 字型
