@@ -11,7 +11,7 @@ categories: Git,
 
 點選 [Save private key] 儲存私鑰。  
 
-![image]({{site.url}}assets/img/putty-key-generator-key generated.PNG)  
+![image]({{site.url}}img/putty-key-generator-key generated.PNG)  
 
 新增 SSH 金鑰。
 ![image]({{site.url}}assets/img/Github.PNG)  
