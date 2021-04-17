@@ -7,7 +7,7 @@ tags: JavaScripts
 
 ---
 
-#### Template Literals
+#### 樣板字面值 Template Literals
 
 {% highlight JavaScript %}
 
@@ -18,7 +18,7 @@ console.log(`i'm ${country}`); // → i'm boy
 
 {% endhighlight %}
 <br>   
-<br> 
+
 #### 大寫字型永遠"小於"小寫字型
 
 {% highlight JavaScript %}
@@ -27,12 +27,12 @@ console.log('a' > 'Z'); // → true
 
 {% endhighlight %}
 <br>   
-<br>   
+   
 #### 型別轉換 Type Coersion
 
 {% highlight JavaScript %}
 
-// 包含數字和null的算術運算將導致將null隱式轉換為數字
+// 包含數字和 null 的算術運算將導致將 null 隱式轉換為數字 0
 console.log(8 * null); // → 0
 
 // "5" 會被轉為 5
@@ -47,6 +47,8 @@ console.log("five" * 2); // → NaN
 console.log(false == 0); // → true
 
 {% endhighlight %}
+<br>  
+
 
 
 
