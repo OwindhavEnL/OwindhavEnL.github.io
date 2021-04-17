@@ -53,7 +53,8 @@ console.log(false == 0); // → true
 
 {% highlight JavaScript %}
 
-// 當 null 或 undefined 出現在運算子的一側時，只有當另一側也是 null 或 undefined 時才會是 true
+// 當 null 或 undefined 出現在運算子的一側時，
+// 只有當另一側也是 null 或 undefined 時才會是 true
 console.log(null == undefined) // → true
 console.log(null == 0); // → false
 
@@ -68,7 +69,8 @@ console.log(null == 0); // → false
 console.log(null || "default"); // → default
 console.log("Agnes" || "default"); // → Agnes
 
-// 右側的值可以當作預設值，當左側的值為 falsy value 時，falsy value 如 0、""、null、undefined
+// 右側的值可以當作預設值，當左側的值為 falsy value 時，
+// falsy value 如 0、""、null、undefined
 
 // && 運算子會回傳左側的值，當左側可轉為 false，若是不行則傳回右側的值
 console.log(null && "default"); // → null
