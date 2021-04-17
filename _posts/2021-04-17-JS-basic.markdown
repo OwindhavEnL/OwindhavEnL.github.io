@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Insertion Sort"
+date:   2019-01-24 00:43:13 +0800
+categories: Computer-Science
+tags: Algorithm
+
+---
+
+
+{% highlight JavaScript %}
+
+let gender = 'boy';
+
+// Template Literals
+console.log(`i'm ${country}`); // 
+
+{% endhighlight %}
+
+
+
+
