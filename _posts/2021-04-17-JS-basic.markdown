@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Insertion Sort"
-date:   2019-01-24 00:43:13 +0800
-categories: Computer-Science
-tags: Algorithm
+title:  "JavaScript Basic"
+date:   2021-04-18 00:10:00 +0800
+categories: Programming
+tags: JavaScripts
 
 ---
 
+#### Template Literals
 
 {% highlight JavaScript %}
 
@@ -16,6 +17,8 @@ let gender = 'boy';
 console.log(`i'm ${country}`); // 
 
 {% endhighlight %}
+
+#### 大寫字型永遠"小於"小寫字型
 
 
 
