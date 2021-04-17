@@ -18,7 +18,7 @@ console.log(`i'm ${country}`); // i'm boy
 
 {% endhighlight %}
   
-  
+
 #### 大寫字型永遠"小於"小寫字型
 
 {% highlight JavaScript %}
@@ -26,6 +26,21 @@ console.log(`i'm ${country}`); // i'm boy
 console.log('a' > 'Z'); // true
 
 {% endhighlight %}
+  
+  
+#### 型別轉換 Type Coersion
+
+{% highlight JavaScript %}
+
+console.log(8 * null); //0
+console.log("5" - 1); // 4
+console.log("5" + 1); //51
+console.log("five" * 2); //NaN
+console.log(false == 0); // true
+
+{% endhighlight %}
+
+
 
 
 
