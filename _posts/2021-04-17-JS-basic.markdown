@@ -14,29 +14,37 @@ tags: JavaScripts
 let gender = 'boy';
 
 // Template Literals
-console.log(`i'm ${country}`); // i'm boy
+console.log(`i'm ${country}`); // → i'm boy
 
 {% endhighlight %}
-  
-
+<br>   
+<br> 
 #### 大寫字型永遠"小於"小寫字型
 
 {% highlight JavaScript %}
 
-console.log('a' > 'Z'); // true
+console.log('a' > 'Z'); // → true
 
 {% endhighlight %}
-  
-  
+<br>   
+<br>   
 #### 型別轉換 Type Coersion
 
 {% highlight JavaScript %}
 
-console.log(8 * null); //0
-console.log("5" - 1); // 4
-console.log("5" + 1); //51
-console.log("five" * 2); //NaN
-console.log(false == 0); // true
+// 包含數字和null的算術運算將導致將null隱式轉換為數字
+console.log(8 * null); // → 0
+
+// "5" 會被轉為 5
+console.log("5" - 1); // → 4
+
+// 字串加法後面會的運算子會轉為字串
+console.log("5" + 1); // → 51
+
+// "five" 無法被轉換
+console.log("five" * 2); // → NaN
+
+console.log(false == 0); // → true
 
 {% endhighlight %}
 
