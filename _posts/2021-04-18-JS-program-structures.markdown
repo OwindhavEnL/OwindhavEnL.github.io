@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "JavaScript Program Structures"
-date:   2021-04-19 08:30:00 +0800
+date:   2021-04-18 08:30:00 +0800
 categories: Programming
 tags: JavaScripts
 
 ---
+
+
 
 ####  運算式 Expression
 
@@ -37,8 +39,10 @@ if (true) {
   let y = 2;
 }
 
-console.log(x); // → 2
+console.log(x); // → 2 
 console.log(y); // → 1
+
+
 
 {% endhighlight %}
 - var 用於宣告全域變數，或是
