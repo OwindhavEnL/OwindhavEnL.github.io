@@ -42,3 +42,9 @@ body {
   
 }
 
+li {padding-left:  1ch;}
+
+li::marker{
+  content: "▸";
+  color: #0E6FC9
+}
