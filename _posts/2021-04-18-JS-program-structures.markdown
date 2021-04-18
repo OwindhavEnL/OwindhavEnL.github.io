@@ -15,9 +15,12 @@ tags: JavaScripts
 
 #### Binding
 
-> To catch and hold values, JavaScript provides a thing called a binding, or variable
+> To catch and hold values, JavaScript provides a thing called a binding, or variable  
 <br>
  為了捕獲和保留值，JavaScript提供了一種稱為綁定或變量的東西。
+
+ #### let 
+
 
 
 
