@@ -12,6 +12,7 @@ tags: JavaScripts
 - 產生 value 的程式片段稱為 expression 
 - 每個逐字寫的 value 也是一個 expression，如 22 或是 "tom"
 - 最簡單的 statement 為 expression 加上分號，如 1;、!false;
+<br>
 
 #### Binding
 
@@ -20,7 +21,9 @@ tags: JavaScripts
 為了捕獲和保留值，JavaScript提供了一種稱為綁定或變量的東西。
 
  #### let  
-
-
-
+{% highlight JavaScript %}
+let one = 1, two = 2;
+{% endhighlight %}
+let 可以同時定義多個變數
+<br> 
 
