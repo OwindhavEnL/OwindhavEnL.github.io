@@ -9,21 +9,20 @@ tags: JavaScripts
 
 
 
-####  運算式 Expression
+####  <mark>運算式 Expression</mark>
 
 - 產生 value 的程式片段稱為 expression 
 - 每個逐字寫的 value 也是一個 expression，如 22 或是 "tom"
 - 最簡單的 statement 為 expression 加上分號，如 1; !false;
 <br>  
-<br>   
 
-#### Binding
+#### <mark>Binding</mark>
 
 - To catch and hold values, JavaScript provides a thing called a binding, or variable.
 - 為了捕獲和保留值，JavaScript提供了一種稱為綁定或變量的東西。
 <br>    
-<br>   
 
+#### <mark>var</mark>
 - var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。
 - 如果變數是在 function 外部建立的的，則它將存在於 outer scope 中。
 
@@ -32,10 +31,10 @@ var hours = 1;
 
 function Sleep()
 {		
-	{
-		var hours = 2;
-	}
-	console.log(hours); // logs 2
+  {
+    var hours = 2;
+  }
+  console.log(hours); // logs 2
 }
 
 Sleep();
@@ -75,7 +74,7 @@ const me = {name : 'Chip', age : 40}
 // Uncaught SyntaxError: Identifier 'obj' has already been declared
 
 {
-	const me = {name : 'Chip', age : 40} // 可以在 block 中重新定義 const/let
+    const me = {name : 'Chip', age : 40} // 可以在 block 中重新定義 const/let
 }
 
 me = {name : 'Mike', age : 10} 
