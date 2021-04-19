@@ -20,7 +20,7 @@ tags: JavaScripts
 ### **Binding**
 
 - To catch and hold values, JavaScript provides a thing called a binding, or variable.
-- 為了捕獲和保留值，JavaScript提供了一種稱為綁定或變量的東西。
+- 為了捕獲和保留值，JavaScript提供了一種稱為綁定或變數的東西。
 <br/>
 <br/>
 
@@ -86,7 +86,7 @@ console.log(y); // → 1
 
 {% endhighlight %}
 
-**從該塊的開始直到初始化完成，該變量被稱為處於 “Temporal Dead Zone”（TDZ）中**
+**從該塊的開始直到初始化完成，該變數被稱為處於 “Temporal Dead Zone”（TDZ）中**
 
 let 變數只有在完全初始化後才能被讀取/寫入，在初始化之前存取變數導致ReferenceError。var 變數如果在宣告前存取，將回傳 undefined 的值。。
 
