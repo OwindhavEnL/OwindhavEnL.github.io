@@ -16,6 +16,7 @@ tags: JavaScripts
 - 最簡單的 statement 為 expression 加上分號，如 1; !false;
 <br/>
 <br/>
+
 ### **Binding**
 
 - To catch and hold values, JavaScript provides a thing called a binding, or variable.
