@@ -64,8 +64,8 @@ let one = 1, two = 2;
 - 只作用在當前區塊的變數
 - 不同於 var，let 和 const 沒有 Hoisting
 - 不同於 var，let 和 const 不能在同個 block 下重複宣告變數，但在不同 block 可以
+- 不同於 var，let 和 const 在全域宣告時，不會在 windows 建立屬性
 - const 不能被重新 assign 值，但 const 物件的內容可以修改
-
 
 {% highlight JavaScript %}
 
