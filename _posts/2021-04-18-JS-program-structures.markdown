@@ -24,7 +24,7 @@ tags: JavaScripts
 <br/>
 <br/>
 
-### **var let const**
+### **var、let 與 const**
 var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。 如果變數是在 function 外部建立的的，則它將存在於 outer scope 中。
 
 {% highlight JavaScript %}
