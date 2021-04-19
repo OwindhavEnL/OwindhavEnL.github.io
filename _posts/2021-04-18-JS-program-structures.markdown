@@ -22,6 +22,7 @@ tags: JavaScripts
 - To catch and hold values, JavaScript provides a thing called a binding, or variable.
 - 為了捕獲和保留值，JavaScript提供了一種稱為綁定或變量的東西。
 <br/>
+<br/>
 
 ### **var**
 - var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。
