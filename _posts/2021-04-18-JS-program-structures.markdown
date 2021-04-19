@@ -88,8 +88,7 @@ console.log(y); // → 1
 
 **從該塊的開始直到初始化完成，該變量被稱為處於 “Temporal Dead Zone”（TDZ）中**
 
--let 變數只有在完全初始化後才能被讀取/寫入，這在宣告他們時發生（如果在宣告中未指定初始值，則該變數將使用undefined值進行初始化）。在初始化之前存取變數導致ReferenceError。
--var 變數如果在宣告前存取，將回傳 undefined 的值。。
+let 變數只有在完全初始化後才能被讀取/寫入，在初始化之前存取變數導致ReferenceError。var 變數如果在宣告前存取，將回傳 undefined 的值。。
 
 {% highlight JavaScript %}
 { 
