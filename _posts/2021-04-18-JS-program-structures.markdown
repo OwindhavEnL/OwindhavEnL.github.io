@@ -62,9 +62,6 @@ let one = 1, two = 2;
 {% endhighlight %}
 - let 可以同時定義多個變數
 - 只作用在當前區塊的變數
-- 不同於 var，let 和 const 沒有 Hoisting
-- 不同於 var，let 和 const 不能在同個 block 下重複宣告變數，但在不同 block 可以
-- 不同於 var，let 和 const 在全域宣告時，不會在 windows 建立屬性
 - const 不能被重新 assign 值，但 const 物件的內容可以修改
 
 {% highlight JavaScript %}
@@ -98,4 +95,9 @@ console.log(y); // → 1
 {% endhighlight %}
 
 <br/>   
+<br/>   
 
+### **let const 與 var 的差異**
+- let 和 const 沒有 Hoisting
+- let 和 const 不能在同個 block 下重複宣告變數，但在不同 block 可以
+- let 和 const 在全域宣告時，不會在 windows 物件建立屬性
