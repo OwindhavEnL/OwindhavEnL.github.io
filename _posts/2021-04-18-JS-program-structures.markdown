@@ -15,6 +15,7 @@ tags: JavaScripts
 - 每個逐字寫的 value 也是一個 expression，如 22 或是 "tom"
 - 最簡單的 statement 為 expression 加上分號，如 1; !false;
 <br/>
+<br/>
 ### **Binding**
 
 - To catch and hold values, JavaScript provides a thing called a binding, or variable.
