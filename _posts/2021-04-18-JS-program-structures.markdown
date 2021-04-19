@@ -86,15 +86,18 @@ console.log(y); // → 1
 
 {% endhighlight %}
 
-let 變數只有在完全初始化後才能被讀取/寫入，這在宣告他們時發生（如果在宣告中未指定初始值，則該變數將使用undefined值進行初始化）。在初始化之前存取變數導致ReferenceError。這與var變量不同，var變量如果在聲明它們之前被訪問，將返回undefined的值。從該塊的開始直到初始化完成，該變量被稱為處於 “Temporal Dead Zone”（TDZ）中。
+**從該塊的開始直到初始化完成，該變量被稱為處於 “Temporal Dead Zone”（TDZ）中**
+
+-let 變數只有在完全初始化後才能被讀取/寫入，這在宣告他們時發生（如果在宣告中未指定初始值，則該變數將使用undefined值進行初始化）。在初始化之前存取變數導致ReferenceError。
+-var 變數如果在宣告前存取，將回傳 undefined 的值。。
 
 {% highlight JavaScript %}
 { 
-  // TDZ starts at beginning of scope
+  // TDZ 從 scope 的起點開始
   console.log(bar); // undefined
   console.log(foo); // ReferenceError
   var bar = 1;
-  let foo = 2; // End of TDZ (for foo)
+  let foo = 2; // TDZ 結束 (針對 foo 變數)
 }
 {% endhighlight %}
 
