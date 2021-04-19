@@ -25,8 +25,7 @@ tags: JavaScripts
 <br/>
 
 ### **var**
-- var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。
-- 如果變數是在 function 外部建立的的，則它將存在於 outer scope 中。
+var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。 如果變數是在 function 外部建立的的，則它將存在於 outer scope 中。
 
 {% highlight JavaScript %}
 var hours = 1;
@@ -46,7 +45,7 @@ console.log(hours); // logs 1
 <br/> 
 
 ### **let vs const**
-
+只作用在當前區塊的變數
 {% highlight JavaScript %}
 let x = 1;
 {
@@ -55,14 +54,13 @@ let x = 1;
 console.log(x); // → 1 
 
 {% endhighlight %}
-<br/>
 
+let 可以同時定義多個變數
 {% highlight JavaScript %}
 let one = 1, two = 2;
 {% endhighlight %}
-- let 可以同時定義多個變數
-- 只作用在當前區塊的變數
-- const 不能被重新 assign 值，但 const 物件的內容可以修改
+
+const 不能被重新 assign 值，但 const 物件的內容可以修改
 
 {% highlight JavaScript %}
 
@@ -94,7 +92,6 @@ console.log(y); // → 1
 
 {% endhighlight %}
 
-<br/>   
 <br/>   
 
 ### **let const 與 var 的差異**
