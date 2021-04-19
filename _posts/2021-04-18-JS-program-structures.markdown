@@ -24,7 +24,7 @@ tags: JavaScripts
 <br/>
 <br/>
 
-### **var**
+### **var let const**
 var 是 function scope 的。只要在 function 中使用 var 宣告變數，該變數就僅存在於 function 中。 如果變數是在 function 外部建立的的，則它將存在於 outer scope 中。
 
 {% highlight JavaScript %}
@@ -33,19 +33,17 @@ var hours = 1;
 function Sleep()
 {		
   {
-    var hours = 2;
+    var hours = 2; // 被限制在該 Sleep() 的 scope 中
   }
-  console.log(hours); // logs 2
+  console.log(hours); // → 2
 }
 
 Sleep();
-console.log(hours); // logs 1
+console.log(hours); // → 1
 
 {% endhighlight %}
-<br/> 
 
-### **let vs const**
-只作用在當前區塊的變數
+let/const 定義的變數只作用在當前區塊(scope)中
 {% highlight JavaScript %}
 let x = 1;
 {
@@ -66,19 +64,15 @@ const 不能被重新 assign 值，但 const 物件的內容可以修改
 
 const me = {name : 'John', age : 20}
 
-const me = {name : 'Chip', age : 40}
-// Uncaught SyntaxError: Identifier 'obj' has already been declared
-
-{
-    const me = {name : 'Chip', age : 40} // 可以在 block 中重新定義 const/let
-}
-
 me = {name : 'Mike', age : 10} 
-// Uncaught TypeError: Assignment to constant variable.
+// TypeError: 指派值到常數變數
 
 me.name = 'Tom';
 console.log(me.name); // → 'Tom' const 物件的內容可以修改 
+{% endhighlight %}
 
+let 與 var 的差異
+{% highlight JavaScript %}
 var x = 1;
 let y = 1;
 
@@ -92,9 +86,37 @@ console.log(y); // → 1
 
 {% endhighlight %}
 
-<br/>   
+let 變數只有在完全初始化後才能被讀取/寫入，這在宣告他們時發生（如果在宣告中未指定初始值，則該變數將使用undefined值進行初始化）。在初始化之前存取變數導致ReferenceError。這與var變量不同，var變量如果在聲明它們之前被訪問，將返回undefined的值。從該塊的開始直到初始化完成，該變量被稱為處於 “Temporal Dead Zone”（TDZ）中。
 
-### **let const 與 var 的差異**
-- let 和 const 沒有 Hoisting
-- let 和 const 不能在同個 block 下重複宣告變數，但在不同 block 可以
-- let 和 const 在全域宣告時，不會在 windows 物件建立屬性
+{% highlight JavaScript %}
+{ 
+  // TDZ starts at beginning of scope
+  console.log(bar); // undefined
+  console.log(foo); // ReferenceError
+  var bar = 1;
+  let foo = 2; // End of TDZ (for foo)
+}
+{% endhighlight %}
+
+let 和 const 不能在同個 block 下重複宣告變數，但在不同 block 可以
+{% highlight JavaScript %}
+
+const me = {name : 'John', age : 20}
+
+const me = {name : 'Chip', age : 40} // SyntaxError: 識別字 'obj' 已經被宣告
+
+{
+    const me = {name : 'Chip', age : 40} // 可以在 block 中重新定義 
+}
+{% endhighlight %}
+
+let 和 const 在全域宣告時，不會在 windows 物件建立屬性
+{% highlight JavaScript %}
+
+var tmp = 1;
+let tmp2 = 2;
+
+console.log(window.tmp); // → 1
+console.log(window.tmp2); // → undefined
+
+{% endhighlight %}
