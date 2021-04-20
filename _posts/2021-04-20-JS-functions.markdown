@@ -20,7 +20,7 @@ JavaScript 有 2 種結構型別 (Structural Type)
 - Function
 
 當 function 產生 value 時，因為在 JavaScript 中，有產生值(produces a value)的都稱為 expression，這表示 function calls 可以被當成 expression 使用。每個 function 呼叫會建一個新的 binding，呼叫同個方法不同次都會是一個新的 instance
-<br>  
+      
 
 {% highlight JavaScript %}
 
@@ -48,7 +48,7 @@ function foo() {
 foo();
 console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 scope
 {% endhighlight %}
-<br>  
+      
 
 ### **Lexical Scoping**
 
@@ -86,7 +86,7 @@ function func() {
 
 func();
 {% endhighlight %}
-<br>   
+<br/>   
 
 ### **Function As Value**
 
@@ -106,7 +106,7 @@ test_Function('0', test2); // 將 function value 當參數傳遞
 {% endhighlight %}
 
 Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
-<br/>   
+    
 
 ### **Arrow Functions**
 
