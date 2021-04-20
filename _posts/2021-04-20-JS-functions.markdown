@@ -31,6 +31,8 @@ console.log(x + z); // → 40
 
 {% endhighlight %}
 
+{% highlight JavaScript %}
+
 function foo() {
   // The function scope
   let count = 0;
@@ -39,6 +41,7 @@ function foo() {
 
 foo();
 console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 scope
+{% endhighlight %}
 
 #### Lexical Scoping
 
