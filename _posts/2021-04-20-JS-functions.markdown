@@ -91,35 +91,52 @@ func();
 
 {% highlight JavaScript %}
 let test = function(para){
-	console.log(para + " success");
+  console.log(para + " success");
 }
 
 let test2 = test; // 將 function value 存在一個新的 binding 
 
 // Function Declaration
 function test_Function(para1, para2){
-	para2(50);
+  para2(50);
 }
 
 test_Function('0', test2); // 將 function value 當參數傳遞 
 {% endhighlight %}
 
 Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
+<br>
 
 ### Arrow Functions
+
+一個參數的 Arrow Function 可以省略左側()
 {% highlight JavaScript %}
 const square1 = base => {  
   return base * base;
-} // 一個參數可以省略()
+} 
+{% endhighlight %}
 
+Arrow Function 方法內容只有一行可以省略大括號{}
+{% highlight JavaScript %}
 const square2 = base =>  base * base;
-// 方法內容只有一行可以省略{}
+{% endhighlight %}
 
+多參數的 Arrow Function，要使用空的括號()
+{% highlight JavaScript %}
 const square3 = (base, multi) => {  
   return base * multi;
 }
+{% endhighlight %}
 
+無參數的 Arrow Function，使用空的括號()
+{% highlight JavaScript %}
 const horn = () => {
   console.log("Toot");
-}; // 無參數
+}; 
+{% endhighlight %}
+
+多給參數不會錯
+{% highlight JavaScript %}
+function square4(x) { return x * x; }
+console.log(square4(4, true, "hedgehog")); // 
 {% endhighlight %}
