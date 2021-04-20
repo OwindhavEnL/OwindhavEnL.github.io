@@ -87,4 +87,39 @@ function func() {
 func();
 {% endhighlight %}
 
+### Function As Value
 
+{% highlight JavaScript %}
+let test = function(para){
+	console.log(para + " success");
+}
+
+let test2 = test; // 將 function value 存在一個新的 binding 
+
+// Function Declaration
+function test_Function(para1, para2){
+	para2(50);
+}
+
+test_Function('0', test2); // 將 function value 當參數傳遞 
+{% endhighlight %}
+
+Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
+
+### Arrow Functions
+{% highlight JavaScript %}
+const square1 = base => {  
+  return base * base;
+} // 一個參數可以省略()
+
+const square2 = base =>  base * base;
+// 方法內容只有一行可以省略{}
+
+const square3 = (base, multi) => {  
+  return base * multi;
+}
+
+const horn = () => {
+  console.log("Toot");
+}; // 無參數
+{% endhighlight %}
