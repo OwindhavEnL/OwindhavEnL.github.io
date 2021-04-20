@@ -43,7 +43,7 @@ foo();
 console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 scope
 {% endhighlight %}
 
-#### Lexical Scoping
+### Lexical Scoping
 
 每個 local scope 可以看見包含他的其他 local scopes，每個 scope 都可以看見 global scope
 
