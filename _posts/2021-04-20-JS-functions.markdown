@@ -48,7 +48,7 @@ function foo() {
 foo();
 console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 scope
 {% endhighlight %}
-      
+<br/>
 
 ### **Lexical Scoping**
 
@@ -106,7 +106,7 @@ test_Function('0', test2); // 將 function value 當參數傳遞
 {% endhighlight %}
 
 Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
-    
+<br/>
 
 ### **Arrow Functions**
 
