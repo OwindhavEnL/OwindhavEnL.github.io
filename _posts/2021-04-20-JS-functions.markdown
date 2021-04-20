@@ -84,7 +84,5 @@ function func() {
 func();
 {% endhighlight %}
 
-- innerOfInnerOfFunc() 的 lexical scope 包含 innerOfFunc()，func()和 global scope。
-- 在 innerOfInnerOfFunc()中，可以存取 lexical scope 變數 myInnerVar、myVar、myGlobal。
-- 最後，func()的 lexical scope 僅包含 global scope。在func()中，可以存取 lexical scope 變數 myGlobal。
+innerOfInnerOfFunc() 的 lexical scope 包含 innerOfFunc()，func()和 global scope。在 innerOfInnerOfFunc()中，可以存取 lexical scope 變數 myInnerVar、myVar、myGlobal。最後，func()的 lexical scope 僅包含 global scope。在func()中，可以存取 lexical scope 變數 myGlobal。
 
