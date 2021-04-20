@@ -42,6 +42,8 @@ function foo() {
 foo();
 console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 scope
 {% endhighlight %}
+<br>  
+<br>  
 
 ### Lexical Scoping
 
