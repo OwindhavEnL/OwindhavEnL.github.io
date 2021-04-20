@@ -50,7 +50,7 @@ console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 sco
 {% endhighlight %}
 <br>  
 
-### Lexical Scoping
+### **Lexical Scoping**
 
 每個 local scope 可以看見包含他的其他 local scopes，每個 scope 都可以看見 global scope
 
@@ -87,7 +87,7 @@ function func() {
 func();
 {% endhighlight %}
 
-### Function As Value
+### **Function As Value**
 
 {% highlight JavaScript %}
 let test = function(para){
@@ -107,7 +107,7 @@ test_Function('0', test2); // 將 function value 當參數傳遞
 Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
 <br>
 
-### Arrow Functions
+### **Arrow Functions**
 
 一個參數的 Arrow Function 可以省略左側()
 {% highlight JavaScript %}
