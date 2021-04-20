@@ -63,7 +63,7 @@ console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 sco
 {% highlight JavaScript %}
 const myGlobal = 0;
 
-// func()的 lexical scope 僅包含 global scope。在func()中，可以存取 lexical scope 變數 myGlobal
+// func()的 lexical scope 僅包含 global scope。在 func()中，可以存取 lexical scope 變數 myGlobal
 function func() {
   const myVar = 1;
   console.log(myGlobal); // → "0"
