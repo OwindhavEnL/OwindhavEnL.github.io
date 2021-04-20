@@ -54,3 +54,27 @@ console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 sco
 > Simpler, the lexical scoping means that inside the inner scope you can access variables of outer scopes.
 <br/>
 簡單來說，在內層範疇中，程式可以存取外層範疇的變數
+
+{% highlight JavaScript %}
+const myGlobal = 0;
+
+function func() {
+  const myVar = 1;
+  console.log(myGlobal); // → "0"
+
+  function innerOfFunc() {
+    const myInnerVar = 2;
+    console.log(myVar, myGlobal); // → "1 0"
+
+    function innerOfInnerOfFunc() {
+      console.log(myInnerVar, myVar, myGlobal); // → "2 1 0"
+    }
+
+    innerOfInnerOfFunc();
+  }
+
+  innerOfFunc();
+}
+
+func();
+{% endhighlight %}
