@@ -86,6 +86,7 @@ function func() {
 
 func();
 {% endhighlight %}
+<br>   
 
 ### **Function As Value**
 
@@ -105,7 +106,7 @@ test_Function('0', test2); // 將 function value 當參數傳遞
 {% endhighlight %}
 
 Function Declaration 回被移到 scope 的最上方，且可以被該 scope 的成員使用
-<br>
+<br>   
 
 ### **Arrow Functions**
 
