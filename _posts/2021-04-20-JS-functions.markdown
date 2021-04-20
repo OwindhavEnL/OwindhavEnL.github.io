@@ -52,5 +52,5 @@ console.log(count); // 在此無法存取 count 屬於 foo() 方法建立的 sco
 語彙範疇的意思是變數的可存取性是由變數在巢狀範疇的位置所決定
 
 > Simpler, the lexical scoping means that inside the inner scope you can access variables of outer scopes.
-> <br/>
+<br/>
 簡單來說，在內層範疇中，程式可以存取外層範疇的變數
