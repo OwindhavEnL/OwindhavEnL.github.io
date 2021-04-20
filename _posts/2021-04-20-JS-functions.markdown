@@ -29,10 +29,6 @@ if (true) {
 console.log(x + z); // → 40
 // 在此無法存取 y，y 屬於 if block 建立的 scope
 
-{% endhighlight %}
-
-{% highlight JavaScript %}
-
 function foo() {
   // The function scope
   let count = 0;
