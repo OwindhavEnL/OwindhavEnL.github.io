@@ -192,6 +192,7 @@ myInnerFunc();
 
 當 innerFunc() 呼叫的時候不在 outerFunc() 的 scope 之中，innerFunc() 仍舊可以從 lexical scope 中存取 outerVar 變數，即便是在 lexical scope 的外面，換句話說 innerFunc() closes over(capture, remember) 他的 lexical scope 中的變數 outVar
 <br><br/>
+### Closure 定義
 
 Closure 就是一個方法，即使是在他的 lexical scope 之外執行，仍舊可以存取他的 lexical scope
 > The closure is a function that accesses its lexical scope even executed outside of its lexical scope.
