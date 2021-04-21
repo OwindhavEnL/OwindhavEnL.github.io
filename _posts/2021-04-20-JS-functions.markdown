@@ -173,8 +173,8 @@ function outerFunc() {
 
 outerFunc();
 {% endhighlight %}
-在 innerFunc() 的 scope 中, 變數 outerVar 可以從 lexical scope 中存取，innerFunc() 呼叫的時候是在 outerFunc() 的 scope 之內
-<br/>
+在 innerFunc() 的 scope 中, 變數 outerVar 可以從 lexical scope 中存取，innerFunc() 呼叫的時候是在 outerFunc() 的 scope 之內  
+
 {% highlight JavaScript %}
 function outerFunc() {
   let outerVar = 'I am outside!';
