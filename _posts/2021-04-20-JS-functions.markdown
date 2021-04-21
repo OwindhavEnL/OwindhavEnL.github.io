@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript Functions"
+title:  "Functions"
 date:   2021-04-20 10:03:00 +0800
 categories: Programming
 tags: JavaScripts
