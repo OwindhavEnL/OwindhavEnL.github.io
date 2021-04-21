@@ -202,7 +202,6 @@ Closure 就是一個方法，即使是在他的 lexical scope 之外執行，仍
 ### **為什麼需要 Closure ?**
 主要是為了資料隱私性，無法從 scope 之外存取資料，除非透過該物件的特權方法
 > When you use closures for data privacy, the enclosed variables are only in scope within the containing (outer) function. You can’t get at the data from an outside scope except through the object’s privileged methods.
->
 <br><br/>
 ### **Pure Function**
 
