@@ -159,7 +159,7 @@ console.log(square5(4, 3)); // 12
 
 要使用 Closure，在一個方法中定義一個內部方法並回傳出來，內部方法可以存取外部方法 scope 中的變數，即便外部方法已經回傳
 > To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to anot//her function. The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
-
+        
 {% highlight JavaScript %}
 function outerFunc() {
   let outerVar = 'I am outside!';
