@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript Program Structures"
+title:  "Program Structures"
 date:   2021-04-18 08:30:00 +0800
 categories: Programming
 tags: JavaScripts
