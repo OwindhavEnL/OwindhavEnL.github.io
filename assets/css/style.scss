@@ -42,7 +42,10 @@ body {
   
 }
 
-li {font-size: 20px;}
+li {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
 
 li::marker{
   content: "▸";
