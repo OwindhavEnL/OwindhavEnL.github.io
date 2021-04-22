@@ -56,3 +56,18 @@ h3 {
 p {
   font-size: 20px;
 }
+
+code {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 0 .5em;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    color: #343434;
+    font-size: .69444rem;
+    line-height: 1.4;
+    font-family: Fira Mono,monospace;
+    font-weight: 400;
+    font-feature-settings: "liga" 0;
+    color: inherit;
+}
