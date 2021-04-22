@@ -24,6 +24,7 @@ let day1 = {
 - 陣列的元素是儲存成陣列的屬性，使用數字做為屬性名稱，因數字無法以.存取，所以用 [ ] 存取
 - 包含方法 (function) 的屬性通常稱為該 value 的 methods，如同 toUpperCase 是 string 的 method
 - 物件型別的值為任意屬性的集合
+<br/>
 
 屬性名稱非有效的 binding name 時須加上括號
 {% highlight JavaScript %}
@@ -67,12 +68,13 @@ console.log(Object.keys({x: 0, y: 0})); // → ["x", "y"]
 let objectA = {a: 1, b: 2};
 Object.assign(objectA, {b: 3, c: 4});
 {% endhighlight %}
-<b/r>
+<br/>
 
 ### **Immutable**
  
 數字、字串、布林值為不可改變的
 > numbers, strings, and Booleans, are all immutable
+
 數字本身為不可改變的，但變數儲存數字的參考是可以改變的
 > The numbers themselves are immutable. The references to them that are stored in the variable are not.
 <br>
@@ -92,6 +94,9 @@ console.log(object3.value);// → 10
 <br>
 
 ### **push**
+
+將物件加入陣列的末端
+
 push 到陣列的物件不像一般的物件有冒號 events : events，傳進來的 events 就變成屬性名稱，value 就是傳進來的 event
 {% highlight JavaScript %}
 let journal = [];
@@ -122,14 +127,16 @@ for(let entry of journal)
 從陣列起始位置移除元素
 {% highlight JavaScript %}
 journal[0].events.shift();
-console.log(journal[0].events); //["touched tree", "pizza", "running", "television"]
+console.log(journal[0].events); 
+//["touched tree", "pizza", "running", "television"]
 {% endhighlight %}
 <br/>
 
 從陣列起始位置增加元素
 {% highlight JavaScript %}
 journal[0].events.unshift('trader');
-console.log(journal[0].events); //["touched tree", "pizza", "running", "television"]
+console.log(journal[0].events); 
+//["touched tree", "pizza", "running", "television"]
 {% endhighlight %}
 <br/>
 
@@ -145,7 +152,7 @@ console.log([1, 2, 3, 2, 1].lastIndexOf(1)); // → 4
 {% endhighlight %}
 <br/>
 
-另一個基本的陣列方法是 slice()，它採用開始索引和結束索引，並返回僅包含元素之間的陣列。含起始索引，不含結束索引。
+slice()，它採用開始索引和結束索引，並返回僅包含元素之間的陣列。含起始索引，不含結束索引。
 {% highlight JavaScript %}
 console.log([0, 1, 2, 3, 4].slice(2, 4)); // → [2, 3]
 console.log([0, 1, 2, 3, 4].slice(2)); // → [2, 3, 4]
