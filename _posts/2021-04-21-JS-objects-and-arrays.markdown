@@ -67,6 +67,7 @@ Object.assign(objectA, {b: 3, c: 4});
 {% endhighlight %}
 <br><br/>
  ### **Immutable**
+ 
 數字、字串、布林值為不可改變的
 > numbers, strings, and Booleans, are all immutable
 數字本身為不可改變的，但變數儲存數字的參考是可以改變的
