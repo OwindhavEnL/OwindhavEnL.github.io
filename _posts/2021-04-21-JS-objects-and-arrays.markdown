@@ -19,10 +19,10 @@ let day1 = {
 
 ### **Property**
 
-- 在 JavaScript 中存取屬性 (property) 有兩種方式，假設物件為 <code>value</code>，需要存取屬性 x，存取方式為 value.x 跟 value[x]，value[x]會試著評估 expression x 並將結果轉為字串作為屬性名稱
-- 屬性名稱為字串，所以可以是任何字串，但僅能適用如正常的 binding 名稱，所以如果要存取屬性名稱像是 2 或是 John Doe， 則只能用 value[2] 或是 value ["John Doe"] 存取屬性
-- 陣列的元素是儲存成陣列的屬性，使用數字做為屬性名稱，因數字無法以.存取，所以用 [ ] 存取
-- 包含方法 (function) 的屬性通常稱為該 value 的 methods，如同 toUpperCase 是 string 的 method
+- 在 JavaScript 中存取屬性 (property) 有兩種方式，假設物件為 <code>value</code>，需要存取屬性 <code>x</code>，存取方式為 <code>value.x</code> 跟 <code>value[x]</code>，<code>value[x]</code>會試著評估 expression <code>x</code> 並將結果轉為字串作為屬性名稱
+- 屬性名稱為字串，所以可以是任何字串，但僅能適用如正常的 binding 名稱，所以如果要存取屬性名稱像是 2 或是 John Doe， 則只能用 <code>value[2]</code> 或是 <code>value["John Doe"]</code> 存取屬性
+- 陣列的元素是儲存成陣列的屬性，使用數字做為屬性名稱，因數字無法以<code>.</code>存取，所以用 <code>[ ]</code> 存取
+- 包含方法 (function) 的屬性通常稱為該 value 的 <code>methods</code>，如同 <code>toUpperCase</code> 是 <code>string</code> 的 <code>method</code>
 - 物件型別的值為任意屬性的集合
 <br/>
 
@@ -35,7 +35,7 @@ let descriptions = {
 {% endhighlight %}
 <br>
 
-物件的 delete 方法可以移除屬性
+物件的 <code>delete</code> 方法可以移除屬性
 {% highlight JavaScript %}
   delete anObject.left; // 移除屬性
 {% endhighlight %}
@@ -97,7 +97,7 @@ console.log(object3.value);// → 10
 
 將物件加入陣列的末端
 
-push 到陣列的物件不像一般的物件有冒號 events : events，傳進來的 events 就變成屬性名稱，value 就是傳進來的 event
+<code>push</code> 到陣列的物件不像一般的物件有冒號 <code>events : events</code>，傳進來的 <code>events</code> 就變成屬性名稱，value 就是傳進來的 <code>event</code>
 {% highlight JavaScript %}
 let journal = [];
 
@@ -152,7 +152,7 @@ console.log([1, 2, 3, 2, 1].lastIndexOf(1)); // → 4
 {% endhighlight %}
 <br/>
 
-slice()，它採用開始索引和結束索引，並返回僅包含元素之間的陣列。含起始索引，不含結束索引。
+<code>slice()</code>，它採用開始索引和結束索引，並返回僅包含元素之間的陣列。含起始索引，不含結束索引。
 {% highlight JavaScript %}
 console.log([0, 1, 2, 3, 4].slice(2, 4)); // → [2, 3]
 console.log([0, 1, 2, 3, 4].slice(2)); // → [2, 3, 4]
@@ -161,14 +161,14 @@ console.log([0, 1, 2, 3, 4].slice()); // → [0, 1 2, 3, 4]
 <br/>
 
 ### **字串相關方法**
-字串也有 slice 和 indexOf
+字串也有 <code>slice</code> 和 <code>indexOf</code>
 {% highlight JavaScript %}
 console.log("coconutss".slice(4, 7)); // → nut
 console.log("coconut".indexOf("con")); // 可搜尋
 {% endhighlight %}
 <br/>
 
-trim() 方法從字符串的開頭和結尾刪除空格（空格，換行符號，tab）
+<code>trim()</code> 方法從字符串的開頭和結尾刪除空格（空格，換行符號，tab）
 {% highlight JavaScript %}
 console.log(String(6).padStart(1, "0")); // → 006
 {% endhighlight %}
@@ -208,7 +208,7 @@ let numbers = [5, 1, 7];
 console.log(max(...numbers)); // → 7
 {% endhighlight %}
 
-可以使用類似的...符號來呼叫有陣列參數的方法。這會將陣列展開，將其元素作為單獨的參數傳遞來呼叫方法。
+可以使用類似的<code>...</code>符號來呼叫有陣列參數的方法。這會將陣列展開，將其元素作為單獨的參數傳遞來呼叫方法。
 {% highlight JavaScript %}
 function max_t(t1, t2) {
     
