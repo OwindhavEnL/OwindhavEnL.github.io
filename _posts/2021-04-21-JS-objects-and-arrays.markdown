@@ -85,3 +85,44 @@ object1.value = 15;
 console.log(object2.value);// → 15
 console.log(object3.value);// → 10
 {% endhighlight %}
+<br>
+
+push 到陣列的物件不像一般的物件有冒號 events : events，傳進來的 events 就變成屬性名稱，value 就是傳進來的 event
+{% highlight JavaScript %}
+let journal = [];
+
+function addEntry(events, squirrel) {
+  journal.push({events, squirrel});
+}
+
+addEntry(["work", "touched tree", "pizza", "running",
+          "television"], false);
+		  
+console.log(journal);
+// events: (5) ["work", "touched tree", "pizza", "running", "television"]
+// squirrel: false
+{% endhighlight %}
+<br>
+
+loop 陣列
+{% highlight JavaScript %}
+for(let entry of journal)
+{
+	console.log(`${entry.events.length} events.`);
+}
+{% endhighlight %}
+<br/>
+
+從陣列起始位置移除元素
+{% highlight JavaScript %}
+journal[0].events.shift();
+console.log(journal[0].events); //["touched tree", "pizza", "running", "television"]
+{% endhighlight %}
+<br/>
+
+從陣列起始位置增加元素
+{% highlight JavaScript %}
+journal[0].events.unshift('trader');
+console.log(journal[0].events); //["touched tree", "pizza", "running", "television"]
+{% endhighlight %}
+<br/>
