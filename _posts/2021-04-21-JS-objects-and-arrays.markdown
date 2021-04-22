@@ -66,6 +66,7 @@ let objectA = {a: 1, b: 2};
 Object.assign(objectA, {b: 3, c: 4});
 {% endhighlight %}
 <br><br/>
+
  ### **Immutable**
  
 數字、字串、布林值為不可改變的
@@ -73,6 +74,7 @@ Object.assign(objectA, {b: 3, c: 4});
 數字本身為不可改變的，但變數儲存數字的參考是可以改變的
 > The numbers themselves are immutable. The references to them that are stored in the variable are not.
 <br>
+
 {% highlight JavaScript %}
 let object1 = {value: 10};
 let object2 = object1;
@@ -126,3 +128,33 @@ journal[0].events.unshift('trader');
 console.log(journal[0].events); //["touched tree", "pizza", "running", "television"]
 {% endhighlight %}
 <br/>
+
+indexOf & lastIndexOf
+{% highlight JavaScript %}
+console.log([1, 2, 3, 2, 1].indexOf(3)); // → 2
+console.log([1, 2, 3, 2, 1].lastIndexOf(1)); // → 4 
+{% endhighlight %}
+<br/>
+
+另一個基本的陣列方法是 slice()，它採用開始索引和結束索引，並返回僅包含元素之間的陣列。含起始索引，不含結束索引。
+{% highlight JavaScript %}
+console.log([0, 1, 2, 3, 4].slice(2, 4)); // → [2, 3]
+console.log([0, 1, 2, 3, 4].slice(2)); // → [2, 3, 4]
+console.log([0, 1, 2, 3, 4].slice()); // → [0, 1 2, 3, 4]
+{% endhighlight %}
+<br/>
+
+字串也有 slice 和 indexOf
+{% highlight JavaScript %}
+console.log("coconutss".slice(4, 7)); // → nut
+console.log("coconut".indexOf("con")); // 可搜尋
+{% endhighlight %}
+<br/>
+
+trim() 方法從字符串的開頭和結尾刪除空格（空格，換行符號，tab）
+{% highlight JavaScript %}
+console.log(String(6).padStart(1, "0")); // → 006
+{% endhighlight %}
+
+
+
