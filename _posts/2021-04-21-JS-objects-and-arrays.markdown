@@ -174,4 +174,130 @@ console.log(String(6).padStart(1, "0")); // → 006
 {% endhighlight %}
 <br/>
 
+split
+{% highlight JavaScript %}
+let sentence = "Secretarybirds specialize in stomping";
+let words = sentence.split(" ");
+
+console.log(words); 
+// → ["Secretarybirds", "specialize", "in", "stomping"]
+
+console.log(words.join(". ")); 
+// → Secretarybirds. specialize. in. stomping
+
+console.log("LA".repeat(3));// → LALALA
+
+{% endhighlight %}
+<br/>
+
+### **Rest 參數**
+rest 參數會被組合成一個陣列。如果前面還有其他參數，則它們的值不屬於該陣列。
+
+{% highlight JavaScript %}
+function max(tmp, ...numbers) {
+  console.log(numbers);
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
+  }
+  return result;
+}
+console.log(max(4, 1, 9, -2));// → 9
+
+let numbers = [5, 1, 7];
+console.log(max(...numbers)); // → 7
+{% endhighlight %}
+
+可以使用類似的...符號來呼叫有陣列參數的方法。這會將陣列展開，將其元素作為單獨的參數傳遞來呼叫方法。
+{% highlight JavaScript %}
+function max_t(t1, t2) {
+    
+  return Math.max(t1,t2);
+}
+
+console.log(max_t(...numbers));
+{% endhighlight %}
+<br/>
+
+### **Destructuring Assignment 解構指派**
+
+Destructuring Assignment 語法是一個 JavaScript 表達式，可以將陣列中的值或物件的屬性解構為不同的變數。
+{% highlight JavaScript %}
+let a, b, rest;
+[a, b] = [10, 20];
+
+console.log(a); // → 10
+
+console.log(b); // → 20
+
+// 搭配 Rest 參數
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log(rest); // → [30,40,50]
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+const x = [1, 2, 3, 4, 5];
+const [y, z] = x;
+console.log(y); // → 1
+console.log(z); // →  2
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+const foo = ['one', 'two', 'three'];
+
+const [red, yellow, green] = foo;
+console.log(red); // → "one"
+console.log(yellow); // → "two"
+console.log(green); // → "three"
+{% endhighlight %}
+<br/>
+
+預設值
+{% highlight JavaScript %}
+let a, b;
+
+[a=5, b=7] = [1];
+console.log(a); // → 1
+console.log(b); // → 7
+{% endhighlight %}
+<br/>
+
+解構方法回傳的陣列
+{% highlight JavaScript %}
+function f() {
+  return [1, 2];
+}
+
+let a, b;
+[a, b] = f();
+console.log(a); // → 1
+console.log(b); // → 2
+{% endhighlight %}
+<br/>
+
+忽略部分回傳值
+{% highlight JavaScript %}
+function f() {
+  return [1, 2, 3];
+}
+
+const [a, , b] = f();
+console.log(a); // → 1
+console.log(b); // → 3
+
+const [c] = f();
+console.log(c); // → 1
+{% endhighlight %}
+<br/>
+
+解構陣列時，可以將剩餘的元素使用 rest 模式打包成一個變數(需置於最右側)
+{% highlight JavaScript %}
+const [a, ...b] = [1, 2, 3];
+console.log(a); // → 1
+console.log(b); // → [2, 3]
+{% endhighlight %}
+<br/>
 
