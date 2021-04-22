@@ -19,7 +19,7 @@ let day1 = {
 
 ### **Property**
 
-- 在 JavaScript 中存取屬性 (property) 有兩種方式，假設物件為 <cod>value</code>，需要存取屬性 x，存取方式為 value.x 跟 value[x]，value[x]會試著評估 expression x 並將結果轉為字串作為屬性名稱
+- 在 JavaScript 中存取屬性 (property) 有兩種方式，假設物件為 <code>value</code>，需要存取屬性 x，存取方式為 value.x 跟 value[x]，value[x]會試著評估 expression x 並將結果轉為字串作為屬性名稱
 - 屬性名稱為字串，所以可以是任何字串，但僅能適用如正常的 binding 名稱，所以如果要存取屬性名稱像是 2 或是 John Doe， 則只能用 value[2] 或是 value ["John Doe"] 存取屬性
 - 陣列的元素是儲存成陣列的屬性，使用數字做為屬性名稱，因數字無法以.存取，所以用 [ ] 存取
 - 包含方法 (function) 的屬性通常稱為該 value 的 methods，如同 toUpperCase 是 string 的 method
