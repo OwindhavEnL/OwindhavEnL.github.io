@@ -301,3 +301,98 @@ console.log(b); // → [2, 3]
 {% endhighlight %}
 <br/>
 
+### **Destructuring Objects 解構物件**
+{% highlight JavaScript %}
+const user = {
+    id: 42,
+    is_verified: true
+};
+
+// 解構中的屬性名稱必須相同於原本物件的屬性名稱
+const {id, is_verified} = user;
+
+console.log(id); // → 42 
+console.log(is_verified); // → true
+{% endhighlight %}
+<br/>
+
+值派時無宣告
+{% highlight JavaScript %}
+let a, b;
+
+({a, b} = {a: 1, b: 2});
+{% endhighlight %}
+<br/>
+
+值派新變數名稱
+{% highlight JavaScript %}
+const o = {p: 42, q: true};
+const {p: foo, q: bar} = o;
+
+console.log(foo); // → 42
+console.log(bar); // → true
+
+{% endhighlight %}
+<br/>
+
+值派變數預設值
+{% highlight JavaScript %}
+const {a = 10, b = 5} = {a: 3};
+
+console.log(a); // → 3
+console.log(b); // → 5
+{% endhighlight %}
+<br/>
+
+值派新變數名稱並給預設值
+{% highlight JavaScript %}
+const {a: aa = 10, b: bb = 5} = {a: 3};
+
+console.log(aa); // → 3
+console.log(bb);
+{% endhighlight %}
+<br/>
+
+解構物件屬性傳至方法參數
+{% highlight JavaScript %}
+const user = {
+  id: 42,
+  displayName: 'jdoe',
+  fullName: {
+    firstName: 'John',
+    lastName: 'Doe'
+  }
+};
+
+function userId({id}) {
+  return id;
+}
+
+function whois({displayName, fullName: {firstName: name}}) {
+  return `${displayName} is ${name}`;
+}
+
+console.log(userId(user)); // → 42
+console.log(whois(user));  // → "jdoe is John"
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+
+{% endhighlight %}
+<br/>
+
+{% highlight JavaScript %}
+
+{% endhighlight %}
+<br/>
