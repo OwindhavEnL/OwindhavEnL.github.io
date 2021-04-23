@@ -140,13 +140,13 @@ console.log(journal[0].events);
 {% endhighlight %}
 <br/>
 
-indexOf
+<code>indexOf()</code>
 {% highlight JavaScript %}
 console.log([1, 2, 3, 2, 1].indexOf(3)); // → 2
 {% endhighlight %}
 <br/>
 
-lastIndexOf
+<code>lastIndexOf()</code>
 {% highlight JavaScript %}
 console.log([1, 2, 3, 2, 1].lastIndexOf(1)); // → 4 
 {% endhighlight %}
@@ -161,7 +161,7 @@ console.log([0, 1, 2, 3, 4].slice()); // → [0, 1 2, 3, 4]
 <br/>
 
 ### **字串相關方法**
-字串也有 <code>slice</code> 和 <code>indexOf</code>
+字串也有 <code>slice()</code> 和 <code>indexOf()</code>
 {% highlight JavaScript %}
 console.log("coconutss".slice(4, 7)); // → nut
 console.log("coconut".indexOf("con")); // 可搜尋
@@ -174,7 +174,7 @@ console.log(String(6).padStart(1, "0")); // → 006
 {% endhighlight %}
 <br/>
 
-split
+<code>split()</code>
 {% highlight JavaScript %}
 let sentence = "Secretarybirds specialize in stomping";
 let words = sentence.split(" ");
@@ -190,7 +190,7 @@ console.log("LA".repeat(3));// → LALALA
 {% endhighlight %}
 <br/>
 
-### **Rest 參數**
+### **Rest Parameter**
 rest 參數會被組合成一個陣列。如果前面還有其他參數，則它們的值不屬於該陣列。
 
 {% highlight JavaScript %}
