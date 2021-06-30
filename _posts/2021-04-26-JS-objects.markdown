@@ -222,3 +222,43 @@ console.log(blackRabbit.teeth); // → small
 console.log(Rabbit.prototype.teeth); // → small
 {% endhighlight %}
 <br/>
+
+### **Polymorphism**
+
+當您在物件上調用 String 函數（將值轉換為字串）時，它將調用該物件上的 toString 方法以嘗試從中創建一個有意義的字串。一些標準原型定義了它們自己的 toString 版本，因此它們可以創建一個包含比“[object Object]”更有用意義的字串。
+
+{% highlight JavaScript %}
+Rabbit.prototype.toString = function() {
+  return `a ${this.type} rabbit`;
+};
+
+console.log(String(blackRabbit));
+// → a black rabbit
+{% endhighlight %}
+
+### **Getters, setters, and statics**
+
+{% highlight JavaScript %}
+class Temperature {
+  constructor(celsius) {
+    this.celsius = celsius;
+  }
+  get fahrenheit() {
+    return this.celsius * 1.8 + 32;
+  }
+  set fahrenheit(value) {
+    this.celsius = (value - 32) / 1.8;
+  }
+
+  static fromFahrenheit(value) {
+    return new Temperature((value - 32) / 1.8);
+  }
+}
+
+let temp = new Temperature(22);
+console.log(temp.fahrenheit);
+// → 71.6
+temp.fahrenheit = 86;
+console.log(temp.celsius);
+// → 30
+{% endhighlight %}
