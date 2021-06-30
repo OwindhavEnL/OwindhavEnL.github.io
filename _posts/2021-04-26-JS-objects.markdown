@@ -174,6 +174,12 @@ let weirdRabbit = new Rabbit("weird");
 
 理解 <code>prototype</code> 與建構子關聯的方式（通過它的 <code>prototype</code> <code>property</code>）和 <code>object</code> 擁有原型的方式（可以通過 <code>Object.getPrototypeOf</code> 取得）之間的區別很重要。建構子的實際原型是 <code>Function.prototype</code>，因為建構子是函數。它的 <code>prototype</code> 屬性存放通過它創建的 <code>instance</code> 的 <code>prototype</code>。
 
+{% highlight JavaScript %}
+console.log(Object.getPrototypeOf(Rabbit) == Function.prototype); // → true
+console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); // → true
+{% endhighlight %}
+<br/>
+
 ### ****
 
 {% highlight JavaScript %}
