@@ -108,17 +108,16 @@ console.log(bound(1, 2, 3)) // → 2026
 ### **Prototype**
 
 {% highlight JavaScript %}
-console.log(Object.getPrototypeOf({}) ==
-            Object.prototype);
+console.log(Object.getPrototypeOf({}) == Object.prototype);
 // → true
+
 console.log(Object.getPrototypeOf(Object.prototype));
 // → null
 
-console.log(Object.getPrototypeOf(Math.max) ==
-            Function.prototype);
+console.log(Object.getPrototypeOf(Math.max) == Function.prototype);
 // → true
-console.log(Object.getPrototypeOf([]) ==
-            Array.prototype);
+
+console.log(Object.getPrototypeOf([]) == Array.prototype);
 // → true
 
 {% endhighlight %}
