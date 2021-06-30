@@ -140,7 +140,7 @@ killerRabbit.speak("SKREEEE!");
 <br/>
 
 
-### **Classes**
+### **Prototypes**
 
 因此，要建立<code>class</code>的<code>instance</code>，您必須建立一個取得 <code>derived</code>自適當<code>prototype</code> 的 <code>instance</code>，但您還必須確保它本身俱有此類的實例應該具有的屬性。這就是構造函數所做的。
 {% highlight JavaScript %}
@@ -180,20 +180,45 @@ console.log(Object.getPrototypeOf(weirdRabbit) == Rabbit.prototype); // → true
 {% endhighlight %}
 <br/>
 
-### ****
+### **Class Notation**
 
 {% highlight JavaScript %}
+class Rabbit {
+  constructor(type) {
+    this.type = type;
+  }
+  speak(line) {
+    console.log(`The ${this.type} rabbit says '${line}'`);
+  }
+}
+
+let killerRabbit = new Rabbit("killer");
+let blackRabbit = new Rabbit("black");
 {% endhighlight %}
 <br/>
 
-### ****
+class 關鍵字開始一類別宣告，它允許我們在一個地方定義一個 constructor 和 methods。可以在聲明的大括號內編寫任意數量的 methods。constructor 提供了實際的 constructor function，該函數將綁定到名稱 Rabbit。其他的被打包到 constructor 的 prototype 中。因此。
+
+class declaration 目前只允許將方法 methods （包含函數的屬性）添加到 prototype 中。當您想在其中保存非函數值時，這可能有點不方便。該語言的下一個版本可能會改進這一點。現在，您可以在定義類後通過直接操作原型來創建此類屬性。
+
+和函數 function 一樣，類可以在 statements 和 expressions 中使用。當用作 expression 時，它不定義綁定，而只是將產生 constructor 作為值。您可以在 class expression 中省略 class name。
 
 {% highlight JavaScript %}
+let object = new class { getWord() { return "hello"; } };
+console.log(object.getWord()); // → hello
 {% endhighlight %}
 <br/>
 
-### ****
+### **覆寫衍生屬性 Overriding derived properties**
+
+當您向物件添加屬性時，無論它是否存在於原型中，該屬性都會添加到物件本身。如果原型中已經有一個同名的屬性，這個屬性將不再影響物件，因為它現在隱藏在物件自己的屬性後面。
 
 {% highlight JavaScript %}
+Rabbit.prototype.teeth = "small";
+console.log(killerRabbit.teeth); // → small
+killerRabbit.teeth = "long, sharp, and bloody"; 
+console.log(killerRabbit.teeth); // → long, sharp, and bloody
+console.log(blackRabbit.teeth); // → small
+console.log(Rabbit.prototype.teeth); // → small
 {% endhighlight %}
 <br/>
