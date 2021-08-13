@@ -11,7 +11,8 @@ DE 3 (Processing Code)
 
 系統沒有帶值28，所以不存在IRD=20的情況
 
-Process Code = 00 購貨 
-Process Code = 20 退貨 
-Process Code = 30 預借現金
+Process Code = 00 購貨 Purchase (Goods and Services)
+Process Code = 20 退貨 Credit (Purchase Return)
+Process Code = 30 預借現金 Cash Disbursement
+Process Code = 19 Fee Collection (Credit to Transaction Originator)
 
