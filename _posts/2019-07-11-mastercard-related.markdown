@@ -9,7 +9,7 @@ tags: MasterCard
 DE 3 (Processing Code)
 資料長度固定6，分成3個 subfields
 
-系統沒有帶值28，所以不存在IRD=20的情況
+系統沒有帶值28，所以不存在IRD=20, 21的情況
 
 Process Code = 00 購貨 Purchase (Goods and Services)
 Process Code = 20 退貨 Credit (Purchase Return)
