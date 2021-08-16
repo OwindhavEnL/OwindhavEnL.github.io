@@ -18,3 +18,11 @@ Process Code = 19 Fee Collection (Credit to Transaction Originator)
 
 系統沒有CAB = I001，所以不存在IRD=2A的情況
 
+EC交易會帶ECI值(VISA)，UCAF為MC所有
+
+05 : ECI 5 , UCAF 2
+06 : ECI 6 , UCAF 1
+07 : ECI 7 , UCAF 0 
+
+
+
