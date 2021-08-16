@@ -16,3 +16,5 @@ Process Code = 20 退貨 Credit (Purchase Return)
 Process Code = 30 預借現金 Cash Disbursement
 Process Code = 19 Fee Collection (Credit to Transaction Originator)
 
+系統沒有CAB = I001，所以不存在IRD=2A的情況
+
